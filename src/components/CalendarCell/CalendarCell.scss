@@ -1,0 +1,24 @@
+.calendarCell {
+  width: 200px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #000;
+  margin: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.isCurrent {
+  border: 1px solid red;
+  background: red;
+  color: #fff;
+}
+
+.isSelected {
+  border: 2px solid red;
+  padding: 5px;
+  margin: 5px;
+  .calendarCell {
+    cursor: default;
+  }
+}
