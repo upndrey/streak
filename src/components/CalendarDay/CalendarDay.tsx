@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import './CalendarCell.scss';
+import './CalendarDay.scss';
 
-type CalendarCellProps = {
+type CalendarDayProps = {
   onClick: any,
   day: number,
   month: number,
@@ -10,12 +10,12 @@ type CalendarCellProps = {
   isSelected: boolean,
 }
 
-class CalendarCell extends Component<CalendarCellProps> {
+class CalendarDay extends Component<CalendarDayProps> {
   render() {
-    let setClass = "calendarCell";
+    let setClass = "calendarDay";
     setClass += this.props.isCurrent ? " isCurrent" : "";
 
-    let setWrapperClass = "calendarWrapperCell";
+    let setWrapperClass = "calendarWrapperDay";
     setWrapperClass += this.props.isSelected ? " isSelected" : "";
     return (
     <div className={setWrapperClass}>
@@ -33,4 +33,4 @@ class CalendarCell extends Component<CalendarCellProps> {
   }
 }
 
-export default CalendarCell;
+export default CalendarDay;

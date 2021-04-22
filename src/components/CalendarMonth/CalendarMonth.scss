@@ -1,0 +1,28 @@
+
+
+.CalendarMonthWrapper {
+  flex-grow: 1;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 5px;
+  margin: 5px 0;
+  &>*{
+    border: 1px solid transparent;
+    padding: 5px;
+    text-align: center;
+    user-select: none;
+  }
+}
+
+.currentMonth {
+  border: 1px solid red;
+  background: red;
+  color: #fff;
+}
+
+.selectedMonth {
+  border: 2px solid red;
+  .calendarMonth {
+    cursor: default;
+  }
+}

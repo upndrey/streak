@@ -1,0 +1,23 @@
+.CalendarDaysList, .CalendarMonthList, .CalendarYearsList {
+  border: 2px solid red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: visible;
+  z-index: 999;
+}
+
+.CalendarDaysList {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.CalendarMonthList {
+  border-top: 0;
+}
+
+.CalendarYearsList {
+  border-bottom: 0;
+}

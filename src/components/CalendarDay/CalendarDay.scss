@@ -1,9 +1,10 @@
-.calendarCell {
+.calendarDay {
   width: 200px;
   height: 100px;
   padding: 5px;
   border: 1px solid #000;
   margin: 5px;
+  margin-bottom: 0;
   user-select: none;
   cursor: pointer;
 }
@@ -15,9 +16,13 @@
 }
 
 .isSelected {
+  position: relative;
+  top: 2px;
   border: 2px solid red;
+  border-bottom: 2px solid white;
   padding: 5px;
   margin: 5px;
+  margin-bottom: 0;
   .calendarCell {
     cursor: default;
   }

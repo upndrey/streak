@@ -1,0 +1,32 @@
+.CalendarYearWrapper {
+  flex-grow: 1;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 5px;
+  margin: 5px 0;
+  &>*{
+    border: 1px solid transparent;
+    padding: 5px;
+    text-align: center;
+    user-select: none;
+  }
+}
+
+.currentYear {
+  border: 1px solid red;
+  background: red;
+  color: #fff;
+}
+
+.selectedYear {
+  position: relative;
+  bottom: 5px;
+  border: 2px solid red;
+  border-top: 2px solid white;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 0;
+  .calendarMonth {
+    cursor: default;
+  }
+}

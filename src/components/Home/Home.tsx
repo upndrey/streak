@@ -1,12 +1,12 @@
 import { Component } from 'react';
 import './Home.scss';
-import CalendarLine from '../CalendarLine/CalendarLine';
+import Calendar from '../Calendar/Calendar';
 
 class Home extends Component {
   render() {
     return (
     <div>
-      <CalendarLine />
+      <Calendar />
     </div>
   );
   }
